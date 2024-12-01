@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="240.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.nuos.lab456graphics.MainController">
+   <top>
+       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <Button mnemonicParsing="false" onAction="#moveXplus" text="R" />
+         <Button mnemonicParsing="false" onAction="#moveXminus" text="L" />
+         <Button mnemonicParsing="false" onAction="#moveYminus" text="U" />
+         <Button mnemonicParsing="false" onAction="#moveYplus" text="D" />
+         <Button mnemonicParsing="false" onAction="#moveZplus" text="F" />
+         <Button mnemonicParsing="false" onAction="#moveZminus" text="B" />
+         <Button mnemonicParsing="false" onAction="#rotateX" text="X+" />
+         <Button mnemonicParsing="false" onAction="#rotateXminus" text="X-" />
+         <Button mnemonicParsing="false" onAction="#rotateY" text="Y+" />
+         <Button mnemonicParsing="false" onAction="#rotateYminus" text="Y-" />
+         <Button mnemonicParsing="false" onAction="#rotateZ" text="Z+" />
+         <Button mnemonicParsing="false" onAction="#rotateZminus" text="Z-" />
+         <CheckBox mnemonicParsing="false" text="visibility" onAction="#repaint" fx:id="visibility"/>
+
+       </ToolBar>
+   </top>
+   <center>
+       <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <Canvas fx:id="canvas" height="200.0" width="200.0" />
+       </Pane>
+   </center>
+</BorderPane>
